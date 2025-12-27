@@ -1,0 +1,8 @@
+<?php
+
+use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
+
+return function (RoutingConfigurator $routes): void {
+    // Chemin absolu vers le dossier Controller
+    $routes->import('../../src/Controller/', 'attribute');
+};
